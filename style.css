@@ -1,24 +1,22 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-family: "Montserrat";
 }
 body {
- background-color: rgb(215, 162, 3);
- 
+  background: linear-gradient(-90deg, #FFEA00, #D7A203);
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .container {
   font-size: 16px;
-  width: 90vw;
-  max-width: 37.5em;
+  max-width: 800px;
   padding: 3em 1.5em;
   background-color: #201f28;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  opacity: 90%;
+  opacity: 85%;
 }
 .search-container {
   display: grid;
@@ -31,10 +29,10 @@ body {
   border: 0cm;
 }
 .search-container input {
-  background-color: transparent;
+  background-color: #ffffff;
   border: 1px solid #ffffff;
   padding: 0.5em;
-  color: #ffffff;
+  color: black;
 }
 
 .search-container button {
@@ -54,10 +52,10 @@ body {
 }
 h2 {
   text-align: center;
+  text-transform: uppercase;
   font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 0.06em;
-  font-kerning: ;
 }
 .h5 {
   display: flex;
@@ -93,4 +91,18 @@ p {
 }
 .msg {
   text-align: center;
+}
+.logo {
+  max-width: 300px;
+  height: auto;
+  padding: 0.5em;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #201f28;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
 }

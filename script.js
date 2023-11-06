@@ -1,15 +1,16 @@
 
+const key = "84454899";
+
 const movieNameRef = document.getElementById("movie-name");
 const searchBtn = document.getElementById("search-btn");
 const result = document.getElementById("result");
 
-key = "84454899";
 const getMovie = () => {
   const movieName = movieNameRef.value;
   const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
   if (movieName.length <= 0) {
-    result.innerHTML = `<h3 class="msg">ENTER MOVIE NAME</h3>`;
+    result.innerHTML = `<h3 class="msg">ENTER ANIME/CARTOON NAME</h3>`;
   }
 
   else {
@@ -50,3 +51,8 @@ const getMovie = () => {
 };
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
+movieNameRef.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    getMovie();
+  }
+});
